@@ -1,14 +1,3 @@
-/*
- * CF - Práctica 8: Conexión BLE (Bluetooth Low Energy)
- * -----------------------------------------------------
- * Lee una fotoresistencia (sensor analógico) conectada al GPIO 13 de una
- * WEMOS LOLIN32 (ESP32) y publica el valor leído como una característica
- * BLE de solo lectura. El valor también se envía por el puerto serial.
- *
- * Placa:   Herramientas > Placa > ESP32 Arduino > WEMOS LOLIN32
- * Serial:  9600 baudios
- */
-
 // Importa la librerías necesarias para trabajar con BLE
 #include <BLEDevice.h>
 #include <BLEUtils.h>
@@ -19,7 +8,7 @@ const int ANALOG_IN_PIN = 13; // Selecciona el pin para la lectura analógica
 const int SPEED_TRANSMISSION = 9600; // selecciona la velocidad de transmisión
 
 
-const String DEVICE_NAME = String("CF-Rivera_Tovar"); // Define el nombre del dispositivo
+const String DEVICE_NAME = String("CF-RiveraTovar"); // Define el nombre del dispositivo
 // Usar https://www.uuidgenerator.net/ para generarlos
 const String SERVICE_UUID = String("6e3cfbdc-d9c8-4e49-a7af-6d6cf512febe"); // Define el identificador de servicio
 const String CHARACTERISTIC_UUID = String("6ed2fd5f-02f1-46a6-a0f8-b9ebc595c0f0"); // Define el identificador de característica
